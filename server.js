@@ -1,3 +1,5 @@
+
+
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
@@ -31,8 +33,18 @@ const server = http.createServer((req, res) => {
                     res.end(content)
                 }
             )
-        }
+        } else if (req.url === '/api/users') {
 
+            res.writeHead(200, {
+                'Content-Type': 'text/json'
+            })
+            const user = [
+                { name: "Norik", age: 50 },
+                { name: "Milly", age: 42 },
+            ];
+
+            res.end(JSON.stringify(user))
+        }
     }
     else if (req.method === 'POST') {
         const body = [];
