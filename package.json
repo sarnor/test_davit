@@ -1,0 +1,28 @@
+{
+  "name": "test_davit",
+  "version": "1.0.0",
+  "description": "Test site for Davit",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarnor/test_davit.git"
+  },
+  "author": "Dav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarnor/test_davit/issues"
+  },
+  "homepage": "https://github.com/sarnor/test_davit#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "webpack": "^5.99.6",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
